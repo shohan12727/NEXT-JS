@@ -1,9 +1,14 @@
+import Banner from "@/Components/Banner";
+import Title from "@/Components/Title";
 import Image from "next/image";
 
 export default function Home() {
   return (
      <div>
-      <h2 className="text-4xl">Welcome to Dev Story</h2>
+      {/* <Title>Welcome to Dev Story</Title>
+       */}
+
+       <Banner></Banner>
      </div>
   );
 }
