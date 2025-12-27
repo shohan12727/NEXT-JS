@@ -1,5 +1,4 @@
-import Image from "next/image";
-import logo from "@/assets/my_photo.jpg";
+
 
 export default function Home() {
   return (
