@@ -25,7 +25,9 @@ export default function RootLayout({ children }) {
       >
         <header className="px-5 py-2 flex justify-between gap-5 ">
           <div>
+          <Link href={"/"}>
             <img src="/logo.jpg" className="w-13 rounded-full h-10" alt="" />
+          </Link>
           </div>
           <div className="flex gap-6">
             <Link href="/foods" className="btn">
