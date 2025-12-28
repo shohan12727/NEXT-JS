@@ -22,7 +22,7 @@ const FoodCard = ({ food }) => {
 
         {/* Buttons */}
         <div className="flex gap-3 pt-3">
-          <AddToCartButton />
+          <AddToCartButton food={food}></AddToCartButton>
           <Link
             href={`/foods/${food.id}`}
             className="flex-1 border border-green-600 text-green-600 py-2 rounded-lg hover:bg-green-50 transition"
