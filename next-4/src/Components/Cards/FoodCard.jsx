@@ -1,5 +1,6 @@
-import Link from 'next/link';
-import React from 'react';
+import Link from "next/link";
+import React from "react";
+import AddToCartButton from "../Buttons/AddToCartButton";
 
 const FoodCard = ({ food }) => {
   return (
@@ -13,27 +14,17 @@ const FoodCard = ({ food }) => {
 
       {/* Content */}
       <div className="p-4 space-y-2">
-        <h2 className="text-lg font-semibold text-gray-800">
-          {food.title}
-        </h2>
+        <h2 className="text-lg font-semibold text-gray-800">{food.title}</h2>
 
-        <p className="text-sm text-gray-500">
-          Category: {food.category}
-        </p>
+        <p className="text-sm text-gray-500">Category: {food.category}</p>
 
-        <p className="text-md font-bold text-green-600">
-          ${food.price}
-        </p>
+        <p className="text-md font-bold text-green-600">${food.price}</p>
 
         {/* Buttons */}
         <div className="flex gap-3 pt-3">
-          <button
-            className="flex-1 bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition"
-          >
-            Add to Cart
-          </button>
-
-          <Link href={`/foods/${food.id}`}
+          <AddToCartButton />
+          <Link
+            href={`/foods/${food.id}`}
             className="flex-1 border border-green-600 text-green-600 py-2 rounded-lg hover:bg-green-50 transition"
           >
             View Details
