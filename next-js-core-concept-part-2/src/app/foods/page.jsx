@@ -12,7 +12,6 @@ export const metadata = {
 };
 
 
-
 const getFoods = async (search) => {
   const res = await fetch(
     `https://taxi-kitchen-api.vercel.app/api/v1/foods/random?search=${search}`,
