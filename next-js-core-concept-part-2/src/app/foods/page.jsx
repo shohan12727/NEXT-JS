@@ -5,6 +5,14 @@ import InputSearch from "@/components/InputSearch";
 
 import style from "./foods.module.css";
 
+
+export const metadata = {
+  title: "All Food",
+  description: "Best Restaurent for food",
+};
+
+
+
 const getFoods = async (search) => {
   const res = await fetch(
     `https://taxi-kitchen-api.vercel.app/api/v1/foods/random?search=${search}`,
