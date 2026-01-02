@@ -23,8 +23,8 @@ export default function ReviewCard({ review }) {
           className="w-14 h-14 rounded-full object-cover border"
         /> */}
         <Image
-          width={300}
-          height={150}
+          width={56}
+          height={56}
           src={photo}
           alt={user}
           className="w-14 h-14 rounded-full object-cover border"
